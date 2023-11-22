@@ -1,0 +1,129 @@
+
+/* CURRENT CARD */
+
+
+.days-forecast {
+  margin-top: 20px;
+}
+.weather-info {
+  margin-right: 30px;
+}
+
+.card__current-weather {
+  display: flex;
+  position: relative;
+  text-align: center;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 1rem;
+  color: #d3dde9;
+  background-color: #1260cc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  transition: background-color 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.card__current-weather:hover {
+  background-color: #1877f2;
+}
+
+.temperature-container {
+  flex-basis: calc(50% - 15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weather-details {
+  flex-basis: calc(50% - 15px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card__current-weather h2 {
+  flex-basis: 100%;
+  font-weight: 500;
+  color: #d3dde9;
+  margin-bottom: 10px;
+  margin-top: 2rem;
+  align-self: flex-start;
+  text-align: center;
+  margin-left: 15%;
+  overflow: visible;
+  text-overflow: ellipsis;
+  word-wrap:normal;
+  max-width: 200px;
+}
+.icon {
+  flex-basis: 100%;
+
+}
+
+.card__current-weather .temperature {
+  flex-basis: 100%;
+  font-size: 4.5rem;
+  font-weight:bolder;
+  margin-top: 10px;
+  text-align: left;
+  color: #d3dde9;
+}
+
+.card__current-weather .weather-details h4 {
+  font-size: 1.5rem;
+}
+
+.card__current-weather img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.footer-date {
+  text-align: center;
+  font-size: 16px;
+  color: #d3dde9; 
+  position: absolute;
+  bottom: 10px; 
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .weather-info {
+    flex-direction: column; 
+  }
+}
+/* WEATHER FORECAST CARDS */
+
+.card__forecast-weather {
+  min-width: 145px;
+  flex: 0 0 auto;
+  padding: 5px;
+  border-radius: 1rem;
+  background-color: #1260cc;
+  color: #d3dde9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  transition: background-color 0.3s;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+
+}
+
+.card__forecast-weather h2 {
+  margin-bottom: 10px; 
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.card__forecast-weather:hover {
+  background-color: #1877f2;
+}
+
+.temperature-forecast {
+  font-size: 3rem;
+}
+
